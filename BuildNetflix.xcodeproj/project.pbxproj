@@ -18,6 +18,7 @@
 		34DAEC44252FF6EE0056A33E /* StandHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAEC43252FF6EE0056A33E /* StandHomeMovie.swift */; };
 		34DAEC48252FF72E0056A33E /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAEC47252FF72E0056A33E /* GlobalHelpers.swift */; };
 		34DAEC4C252FF9400056A33E /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAEC4B252FF9400056A33E /* HomeVM.swift */; };
+		34DAEC51253009DC0056A33E /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAEC50253009DC0056A33E /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		34DAEC43252FF6EE0056A33E /* StandHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandHomeMovie.swift; sourceTree = "<group>"; };
 		34DAEC47252FF72E0056A33E /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		34DAEC4B252FF9400056A33E /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		34DAEC50253009DC0056A33E /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				343AE8F0252BF08600E47D82 /* HomeView.swift */,
 				34DAEC4B252FF9400056A33E /* HomeVM.swift */,
+				34DAEC50253009DC0056A33E /* TopMoviePreview.swift */,
 				343AE8E0252BEFB200E47D82 /* BuildNetflixApp.swift */,
 				343AE8E2252BEFB200E47D82 /* ContentView.swift */,
 				34DAEC40252FF6950056A33E /* Movie.swift */,
@@ -169,6 +172,7 @@
 				34DAEC4C252FF9400056A33E /* HomeVM.swift in Sources */,
 				343AE8E3252BEFB200E47D82 /* ContentView.swift in Sources */,
 				34DAEC44252FF6EE0056A33E /* StandHomeMovie.swift in Sources */,
+				34DAEC51253009DC0056A33E /* TopMoviePreview.swift in Sources */,
 				34DAEC41252FF6950056A33E /* Movie.swift in Sources */,
 				343AE8E1252BEFB200E47D82 /* BuildNetflixApp.swift in Sources */,
 			);
