@@ -21,6 +21,8 @@ struct Movie: Identifiable {
     
     var episodes: [Episode]?
     
+    var promostionHeadline: String?
+    
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
             if num == 1 {
