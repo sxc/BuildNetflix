@@ -46,7 +46,12 @@ struct MovieDetail: View {
                                 .font(.headline)
                         }
                         
-                    
+                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+                            //
+                        }
+                        
+                       
+
                 }
                     
                 }
