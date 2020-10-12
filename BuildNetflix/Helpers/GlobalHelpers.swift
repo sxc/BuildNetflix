@@ -19,6 +19,7 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+    moreLikeThisMovies: [exampleMovie7,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6],
     promostionHeadline: "Best Rated Show")
 
 
@@ -32,7 +33,7 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-    promostionHeadline: "Best Rated Show")
+    moreLikeThisMovies: [], promostionHeadline: "Best Rated Show")
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -44,6 +45,7 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+    moreLikeThisMovies: [],
     promostionHeadline: "Best Rated Show")
 
 let exampleMovie4 = Movie(
@@ -56,16 +58,31 @@ let exampleMovie4 = Movie(
     numberOfSeasons: 4,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
-                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel", promostionHeadline: "Best Rated Show")
+    cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+    moreLikeThisMovies: [],
+    promostionHeadline: "Best Rated Show")
 
 let exampleMovie5 = Movie(id: UUID().uuidString, name: "Hannibal", thumbnailURL: URL(string: "https://picsum.photos/200/303")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 5,  defaultEpisodeInfo: exampleEpisodeInfo1,creators: "Baran bo Odan, Jantje Friese",
-                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel", promostionHeadline: "Best Rated Show")
+                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+                          moreLikeThisMovies: [],
+                          promostionHeadline: "Best Rated Show")
 
-let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 6, defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
-                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",promostionHeadline: "Best Rated Show")
+let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 6,
+                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+                          moreLikeThisMovies: [],
+                          promostionHeadline: "Best Rated Show")
+
+let exampleMovie7 = Movie(id: UUID().uuidString, name: "Before Life", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 6,
+                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
+                          moreLikeThisMovies: [],
+                          promostionHeadline: "Best Rated Show")
 
 
-let exampleMovies: [Movie] = [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6]
+var  exampleMovies: [Movie] {
+    [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6].shuffled()
+}
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginnings and Endings",
                                              description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 1,
