@@ -26,6 +26,59 @@ let exampleTrailer1 = Trailer(name: "Star Trek Season 3 ", videoURL: exampleVide
 
 let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 
+
+let episode1 = Episode(name: "Beginnings and Endings",
+                       season: 1,
+                       episodeNumber: 1,
+                       thumbnailImageURLString: "https://picsum.photos/300/102",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 53,
+                       videoURL: exampleVideoURL)
+
+let episode2 = Episode(name: "Dark Matter",
+                       season: 1,
+                       episodeNumber: 2,
+                       thumbnailImageURLString: "https://picsum.photos/300/103",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 54,
+                       videoURL: exampleVideoURL)
+
+let episode3 = Episode(name: "Ghosts",
+                       season: 1,
+                       episodeNumber: 3,
+                       thumbnailImageURLString: "https://picsum.photos/300/104",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 55,
+                       videoURL: exampleVideoURL)
+
+
+let episode4 = Episode(name: "Beginnings and Endings",
+                       season: 1,
+                       episodeNumber: 1,
+                       thumbnailImageURLString: "https://picsum.photos/300/104",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 53,
+                       videoURL: exampleVideoURL)
+
+let episode5 = Episode(name: "Dark Matter",
+                       season: 1,
+                       episodeNumber: 2,
+                       thumbnailImageURLString: "https://picsum.photos/300/105",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 54,
+                       videoURL: exampleVideoURL)
+
+let episode6 = Episode(name: "Ghosts",
+                       season: 1,
+                       episodeNumber: 6,
+                       thumbnailImageURLString: "https://picsum.photos/300/106",
+                       description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
+                       length: 55,
+                       videoURL: exampleVideoURL)
+
+
+var allExampleEpisodes = [episode1,episode2,episode3,episode4,episode5,episode6,]
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "Community",
