@@ -54,10 +54,31 @@ struct MovieDetail: View {
                         // 1. Default
                         // 2. Personalized - where the user currently is
                         CurrentEpisodeInformation(movie: movie)
+                        
                         CastInfo(movie: movie)
                        
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                //
+                            }
+                            
+                            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true)  {
+                                //
+                            }
+                            
+                            SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                //
+                            }
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        
 
                 }
+                    .padding(.horizontal, 10)
+                    
+                    
+//                    CustomTabSwitcher(tabs: [CustomTab])
                     
                 }
                 
@@ -73,6 +94,8 @@ struct MovieDetail_Previews: PreviewProvider {
         MovieDetail(movie: exampleMovie2)
     }
 }
+
+
 
 struct MovieInfoSubheadline: View {
     var movie: Movie
