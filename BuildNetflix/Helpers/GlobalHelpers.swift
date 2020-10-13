@@ -91,7 +91,9 @@ let exampleMovie1 = Movie(
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [exampleMovie7,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6],
-    promostionHeadline: "Best Rated Show", trailers: exampleTrailers)
+    episodes: allExampleEpisodes,
+    promostionHeadline: "Best Rated Show",
+    trailers: exampleTrailers)
 
 
 let exampleMovie2 = Movie(
@@ -104,7 +106,11 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-    moreLikeThisMovies: [], promostionHeadline: "Best Rated Show", trailers: exampleTrailers)
+   
+    moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
+    promostionHeadline: "Best Rated Show",
+    trailers: exampleTrailers)
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -117,7 +123,9 @@ let exampleMovie3 = Movie(
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
-    promostionHeadline: "Best Rated Show", trailers: exampleTrailers)
+    episodes: allExampleEpisodes,
+    promostionHeadline: "Best Rated Show",
+    trailers: exampleTrailers)
 
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
@@ -131,12 +139,14 @@ let exampleMovie4 = Movie(
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     promostionHeadline: "Best Rated Show",
     trailers: exampleTrailers)
 
 let exampleMovie5 = Movie(id: UUID().uuidString, name: "Hannibal", thumbnailURL: URL(string: "https://picsum.photos/200/303")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 5,  defaultEpisodeInfo: exampleEpisodeInfo1,creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
+                          episodes: allExampleEpisodes,
                           promostionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
@@ -144,6 +154,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailUR
                           defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
+                          episodes: allExampleEpisodes,
                           promostionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
@@ -151,6 +162,7 @@ let exampleMovie7 = Movie(id: UUID().uuidString, name: "Before Life", thumbnailU
                           defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
+                          episodes: allExampleEpisodes,
                           promostionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
