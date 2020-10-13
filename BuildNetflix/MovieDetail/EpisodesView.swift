@@ -21,10 +21,10 @@ struct EpisodesView: View {
             // Season Picker
             HStack {
                 Button(action: {
-                    //
+                    showSeasonPicker = true
                 }, label: {
                     Group{
-                        Text("Season 1")
+                        Text("Season \(selectedSeason)")
                         Image(systemName: "chevron.down")
                     }
                     .font(.system(size: 16))

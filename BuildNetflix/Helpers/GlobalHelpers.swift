@@ -61,7 +61,7 @@ let episode4 = Episode(name: "Beginnings and Endings",
                        videoURL: exampleVideoURL)
 
 let episode5 = Episode(name: "Dark Matter",
-                       season: 1,
+                       season: 3,
                        episodeNumber: 2,
                        thumbnailImageURLString: "https://picsum.photos/300/105",
                        description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
@@ -69,7 +69,7 @@ let episode5 = Episode(name: "Dark Matter",
                        videoURL: exampleVideoURL)
 
 let episode6 = Episode(name: "Ghosts",
-                       season: 1,
+                       season: 2,
                        episodeNumber: 6,
                        thumbnailImageURLString: "https://picsum.photos/300/106",
                        description: "Six months after the disappearances, the police form a tak force. In 2052, Jonas learns the most of Winden perished in an apocalyptic event.",
