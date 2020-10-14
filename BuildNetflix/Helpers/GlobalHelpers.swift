@@ -106,7 +106,6 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-   
     moreLikeThisMovies: [],
     episodes: allExampleEpisodes,
     promostionHeadline: "Best Rated Show",
@@ -154,7 +153,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailUR
                           defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: allExampleEpisodes,
+                          episodes: [],
                           promostionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
@@ -162,7 +161,7 @@ let exampleMovie7 = Movie(id: UUID().uuidString, name: "Before Life", thumbnailU
                           defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: allExampleEpisodes,
+                          episodes: [],
                           promostionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 

@@ -52,6 +52,50 @@ struct HomeView: View {
                     .transition(.opacity)
             
             }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    
+                    VStack(spacing: 40) {
+                        
+                        Spacer()
+                        
+                        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+                            
+                            Button(action: {
+                                topRowSelection = topRow
+                                showTopRowSelection = false
+                                
+                            }, label: {
+                                if topRow == topRowSelection {
+                                    Text("\(topRow.rawValue)")
+                                        .bold()
+                                } else {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.gray)
+                                    
+                                }
+                            })
+                            
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "x.circle.fill")
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30 )
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
+            
+            
         }
         .foregroundColor(.white)
     }
