@@ -21,6 +21,8 @@
 		343AE8F7252BF52800E47D82 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 343AE8F6252BF52800E47D82 /* KingfisherSwiftUI */; };
 		345233DC2533E06400DE1CEE /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345233DB2533E06400DE1CEE /* CustomTabSwitcher.swift */; };
 		345233E02533E9DA00DE1CEE /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345233DF2533E9DA00DE1CEE /* MoreLikeThis.swift */; };
+		345F6B7C2537F43500D46061 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F6B7B2537F43500D46061 /* SearchBar.swift */; };
+		345F6B802537F61D00D46061 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F6B7F2537F61D00D46061 /* Colors.swift */; };
 		34A6AC8025358265005144A7 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A6AC7F25358265005144A7 /* HomeStack.swift */; };
 		34B1BA3D253150140032815B /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B1BA3C253150140032815B /* MovieDetail.swift */; };
 		34B1BA49253158610032815B /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B1BA48253158610032815B /* Episode.swift */; };
@@ -48,6 +50,8 @@
 		343AE8F0252BF08600E47D82 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		345233DB2533E06400DE1CEE /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		345233DF2533E9DA00DE1CEE /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
+		345F6B7B2537F43500D46061 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		345F6B7F2537F61D00D46061 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		34A6AC7F25358265005144A7 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		34B1BA3C253150140032815B /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		34B1BA48253158610032815B /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		343AE8DF252BEFB200E47D82 /* BuildNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				345F6B7A2537F41D00D46061 /* Search */,
 				3424E5042534019900DE0CFD /* VideoPlayer */,
 				345233DE2533E9BE00DE1CEE /* MovieDetail */,
 				34B1BA45253156840032815B /* HomeViews */,
@@ -136,6 +141,14 @@
 			path = MovieDetail;
 			sourceTree = "<group>";
 		};
+		345F6B7A2537F41D00D46061 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				345F6B7B2537F43500D46061 /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		34B1BA3F253156350032815B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				34DAEC47252FF72E0056A33E /* GlobalHelpers.swift */,
+				345F6B7F2537F61D00D46061 /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -252,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3424E50D25340B4B00DE0CFD /* EpisodesView.swift in Sources */,
+				345F6B802537F61D00D46061 /* Colors.swift in Sources */,
 				34DAEC48252FF72E0056A33E /* GlobalHelpers.swift in Sources */,
 				3424E4FF2533FF7D00DE0CFD /* Trailer.swift in Sources */,
 				34B1BA49253158610032815B /* Episode.swift in Sources */,
@@ -265,6 +280,7 @@
 				343AE8E1252BEFB200E47D82 /* BuildNetflixApp.swift in Sources */,
 				345233E02533E9DA00DE1CEE /* MoreLikeThis.swift in Sources */,
 				34A6AC8025358265005144A7 /* HomeStack.swift in Sources */,
+				345F6B7C2537F43500D46061 /* SearchBar.swift in Sources */,
 				345233DC2533E06400DE1CEE /* CustomTabSwitcher.swift in Sources */,
 				3424E50A253403B000DE0CFD /* TrailerList.swift in Sources */,
 				34DAEC55253030D10056A33E /* SmallVerticalButton.swift in Sources */,
