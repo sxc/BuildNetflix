@@ -41,7 +41,7 @@ struct HomeView: View {
                        
 //                    }
                     
-                    HomeStack(vm: vm, topRowSelection: topRowSelection, movieDetailToShow: $movieDetailToShow)
+                    HomeStack(vm: vm, topRowSelection: topRowSelection, selectedGenre: homeGenre, movieDetailToShow: $movieDetailToShow)
                 }
             }
             
@@ -95,6 +95,49 @@ struct HomeView: View {
                 .font(.title2)
             }
             
+            
+            if showGenreSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    
+                    VStack(spacing: 40) {
+                        
+                        Spacer()
+                        
+                        ScrollView {
+                            
+                            ForEach(vm.allGenre, id: \.self) { genre in
+                                
+                                Button(action: {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                }, label: {
+                                    if genre == homeGenre {
+                                        Text("\(genre.rawValue)")
+                                            .bold()
+                                    } else {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.gray)
+                                    }
+                                })
+                                .padding(.bottom, 40)
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showGenreSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
             
         }
         .foregroundColor(.white)
@@ -215,12 +258,12 @@ enum HomeTopRow: String, CaseIterable {
     case myList = "My List"
 }
 
-enum HomeGenre {
-    case AllGenres
-    case Action
-    case Comedy
-    case Horror
-    case Thriller
+enum HomeGenre: String, CaseIterable {
+    case AllGenres = "AllGenres"
+    case Action = "Action"
+    case Comedy = "Comedy"
+    case Horror = "Horror"
+    case Thriller = "Thriller"
 }
 
 
