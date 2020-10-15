@@ -10,17 +10,20 @@ import SwiftUI
 struct SearchBar: View {
     
     @State private var text: String = ""
+    @State private var isEditing = false
+    @State private var isLoading = false
+    
     
     var body: some View {
         ZStack(alignment: .leading) {
             Color.graySearchBackground
-                .frame(width: 290, height: 36)
+                .frame(width: 300, height: 36)
                 .cornerRadius(8)
             
             HStack {
                 Image(systemName: "magnifyingglass")
-                    .background(Color.graySearchText)
-                    .padding(.leading, 10)
+                    .foregroundColor(Color.graySearchText)
+                    .padding(.leading, 8)
             
                 TextField("Search", text: $text)
                     .padding(7)
@@ -28,27 +31,48 @@ struct SearchBar: View {
                     .background(Color.graySearchBackground)
                     .cornerRadius(8)
                     .foregroundColor(.white)
-                    
+                    .onTapGesture(perform: {
+                            isEditing = true
+                    })
                 
-                Button(action: {
-                    // clear text
-                }, label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.graySearchText)
+                if !text.isEmpty {
+                
+                    if isLoading {
+                        
+                        Button(action: {
+                            text = ""
+                        }, label: {
+                            ActivityIndicator(style: .medium, animate: .constant(true))
+                                .configure {
+                                    $0.color = .white
+                                }
+                        })
+                        .padding(.trailing, 32)
                         .frame(width: 35, height: 35)
-                })
-                .padding(.trailing, 18)
-                
-                
-                
-                Button(action: {
-                    // clear text, hid both buttons, give up first-responsder
-                }, label: {
-                    Text("Cancel")
-                        .foregroundColor(.white)
-                })
-                .padding(.trailing, 10)
-                
+                        
+                    } else {
+                        Button(action: {
+                            text = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.graySearchText)
+                                .frame(width: 35, height: 35)
+                        })
+                        .padding(.trailing, 18)
+                    }
+                }
+                if isEditing {
+                    Button(action: {
+                        // clear text, hid both buttons, give up first-responsder
+                        text = ""
+                        isEditing = false
+                        hideKeyboard()
+                    }, label: {
+                        Text("Cancel")
+                            .foregroundColor(.white)
+                    })
+                    .padding(.trailing, 10)
+                }
                 
             }
         }
