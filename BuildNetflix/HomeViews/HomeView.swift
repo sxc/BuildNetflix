@@ -29,7 +29,6 @@ struct HomeView: View {
             ScrollView(showsIndicators: false){
                 LazyVStack {
                     
-//                    ZStack(alignment: .top) {
                         
                     TopRowButtons(topRowSelection: $topRowSelection, homeGenre: $homeGenre, showGenreSelection: $showGenreSelection, showTopRowSelection: $showTopRowSelection)
                     
@@ -38,8 +37,6 @@ struct HomeView: View {
                             .padding(.top, -110)
                             .zIndex(-1)
                         
-                       
-//                    }
                     
                     HomeStack(vm: vm, topRowSelection: topRowSelection, selectedGenre: homeGenre, movieDetailToShow: $movieDetailToShow)
                 }
