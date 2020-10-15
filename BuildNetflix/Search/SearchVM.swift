@@ -17,7 +17,7 @@ class SearchVM: ObservableObject {
     @Published var popularMovies: [Movie] = []
     @Published var searchResults: [Movie] = []
     
-    @Published var isShowingPopularMoies = true
+    @Published var isShowingPopularMovies = true
     
     init() {
         getPopularMovies()
@@ -29,10 +29,10 @@ class SearchVM: ObservableObject {
         
         
         if text.count > 0 {
-            isShowingPopularMoies = false
+            isShowingPopularMovies = false
             getSearchResults(forText: text)
         } else {
-            isShowingPopularMoies = true
+            isShowingPopularMovies = true
         }
         
         
