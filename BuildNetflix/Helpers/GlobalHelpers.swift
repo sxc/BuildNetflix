@@ -92,7 +92,7 @@ let exampleMovie1 = Movie(
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [exampleMovie7,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6],
     episodes: allExampleEpisodes,
-    promostionHeadline: "Best Rated Show",
+    promotionHeadline:"Best Rated Show",
     trailers: exampleTrailers)
 
 
@@ -108,7 +108,7 @@ let exampleMovie2 = Movie(
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
     episodes: allExampleEpisodes,
-    promostionHeadline: "Best Rated Show",
+    promotionHeadline: "Best Rated Show",
     trailers: exampleTrailers)
 
 let exampleMovie3 = Movie(
@@ -123,7 +123,7 @@ let exampleMovie3 = Movie(
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
     episodes: allExampleEpisodes,
-    promostionHeadline: "Best Rated Show",
+    promotionHeadline: "Best Rated Show",
     trailers: exampleTrailers)
 
 let exampleMovie4 = Movie(
@@ -139,14 +139,14 @@ let exampleMovie4 = Movie(
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
     episodes: allExampleEpisodes,
-    promostionHeadline: "Best Rated Show",
+    promotionHeadline: "Best Rated Show",
     trailers: exampleTrailers)
 
 let exampleMovie5 = Movie(id: UUID().uuidString, name: "Hannibal", thumbnailURL: URL(string: "https://picsum.photos/200/303")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 5,  defaultEpisodeInfo: exampleEpisodeInfo1,creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
                           episodes: allExampleEpisodes,
-                          promostionHeadline: "Best Rated Show",
+                          promotionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
 let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 6,
@@ -154,7 +154,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString, name: "After Life", thumbnailUR
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
                           episodes: [],
-                          promostionHeadline: "Best Rated Show",
+                          promotionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
 let exampleMovie7 = Movie(id: UUID().uuidString, name: "Before Life", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"], year: 2020, rating: "TV-MA", numberOfSeasons: 6,
@@ -162,7 +162,7 @@ let exampleMovie7 = Movie(id: UUID().uuidString, name: "Before Life", thumbnailU
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [],
                           episodes: [],
-                          promostionHeadline: "Best Rated Show",
+                          promotionHeadline: "Best Rated Show",
                           trailers: exampleTrailers)
 
 

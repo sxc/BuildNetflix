@@ -9,15 +9,15 @@ import SwiftUI
 
 struct SearchBar: View {
     
-    @State private var text: String = ""
-    @State private var isEditing = false
-    @State private var isLoading = false
+    @Binding var text: String
+    @State private var isEditing = true
+    @Binding  var isLoading: Bool
     
     
     var body: some View {
         ZStack(alignment: .leading) {
             Color.graySearchBackground
-                .frame(width: 300, height: 36)
+                .frame(width: 270, height: 36)
                 .cornerRadius(8)
             
             HStack {
@@ -84,7 +84,7 @@ struct SearchBar_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            SearchBar()
+            SearchBar(text: .constant(""), isLoading: .constant(false))
                 .padding()
         }
     }

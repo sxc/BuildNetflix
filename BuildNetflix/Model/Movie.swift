@@ -35,7 +35,7 @@ struct Movie: Identifiable {
         return episodes == nil ? .movie : .tvShow
     }
     
-    var promostionHeadline: String?
+    var promotionHeadline: String?
     
     var trailers: [Trailer]
     

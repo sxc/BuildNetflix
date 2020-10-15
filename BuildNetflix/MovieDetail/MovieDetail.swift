@@ -47,8 +47,8 @@ struct MovieDetail: View {
                             
                             MovieInfoSubheadline(movie: movie)
                             
-                            if movie.promostionHeadline != nil {
-                                Text(movie.promostionHeadline!)
+                            if movie.promotionHeadline != nil {
+                                Text(movie.promotionHeadline!)
                                     .bold()
                                     .font(.headline)
                             }
