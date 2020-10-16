@@ -12,11 +12,8 @@ struct SearchView: View {
     @ObservedObject var vm = SearchVM()
     
     @State private var searchText = ""
-//    {
-//        didSet {
-//            vm.updateSearchText(with: searchText)
-//        }
-//    }
+    
+    @State private var movieDetailToShow: Movie? = nil 
     
     var body: some View {
         
@@ -27,32 +24,46 @@ struct SearchView: View {
             vm.updateSearchText(with: $0)
         }
         
+        
         return ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            
             VStack {
                 SearchBar(text: searchTextBinding, isLoading: $vm.isLoading)
                     .padding()
                 
                 ScrollView {
-                    
                     if vm.isShowingPopularMovies {
-                        Text("Popular Movies")
+                        PopularList(movies: vm.popularMovies, movieDetailToShow: $movieDetailToShow)
                     }
                     
                     if vm.viewState == .empty {
-                        Text("Empty")
+                        Text("Your search did not have any results.")
+                            .bold()
+                            .padding(.top, 150)
                     } else if vm.viewState == .ready && !vm.isShowingPopularMovies {
-                        Text("Search Results")
+                        VStack {
+                            HStack {
+                                Text("Movies & TV")
+                                    .bold()
+                                    .font(.title3)
+                                    .padding(.leading, 22)
+                                Spacer()
+                            }
+                            
+                            if movieDetailToShow != nil {
+                                MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
+                            }
+                            
+                        }
+                        .foregroundColor(.white)
+                        
+                    }
+                        }
+                        
                     }
                 }
-                Spacer()
             }
-        }
-        .foregroundColor(.white)
-    }
-}
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
@@ -60,4 +71,34 @@ struct SearchView_Previews: PreviewProvider {
             SearchView()
         
     }
+}
+
+struct PopularList: View {
+    
+    var movies: [Movie]
+    
+    @Binding var movieDetailToShow: Movie?
+    
+    var body: some View {
+        VStack {
+            HStack{
+                Text("Popular Searches")
+                    .bold()
+                    .font(.title3)
+                    .padding(.leading, 12)
+                    .foregroundColor(.white)
+                Spacer()
+            }
+            
+            LazyVStack {
+                ForEach(movies, id: \.id) { movie in
+                    PopularMovieView(movie: movie, movieDetailToShow: $movieDetailToShow)
+                        .frame(height: 75)
+                    
+                }
+            }
+        }
+    }
+}
+
 }

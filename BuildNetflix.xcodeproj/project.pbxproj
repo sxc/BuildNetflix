@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3404728E2538924100E874BB /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404728D2538924100E874BB /* PopularMovieView.swift */; };
 		3424E4FF2533FF7D00DE0CFD /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E4FE2533FF7D00DE0CFD /* Trailer.swift */; };
 		3424E5022533FFFD00DE0CFD /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */; };
 		3424E506253401E600DE0CFD /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E505253401E600DE0CFD /* VideoPreviewImage.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3404728D2538924100E874BB /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
 		3424E4FE2533FF7D00DE0CFD /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		3424E505253401E600DE0CFD /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				345F6B7B2537F43500D46061 /* SearchBar.swift */,
 				345F6B8525381C4C00D46061 /* SearchView.swift */,
 				345F6B8825381CD700D46061 /* SearchVM.swift */,
+				3404728D2538924100E874BB /* PopularMovieView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3404728E2538924100E874BB /* PopularMovieView.swift in Sources */,
 				3424E50D25340B4B00DE0CFD /* EpisodesView.swift in Sources */,
 				345F6B8C25381FCE00D46061 /* GenerateMovies.swift in Sources */,
 				345F6B8925381CD700D46061 /* SearchVM.swift in Sources */,
