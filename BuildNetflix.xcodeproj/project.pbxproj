@@ -12,6 +12,9 @@
 		34226BCE2539396D00183D9B /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BCD2539396D00183D9B /* ComingSoon.swift */; };
 		34226BD325393A0E00183D9B /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BD225393A0E00183D9B /* NotificationBar.swift */; };
 		34226BD725393D9500183D9B /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BD625393D9500183D9B /* ComingSoonRow.swift */; };
+		34226BDA2539434600183D9B /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BD92539434600183D9B /* ComingSoonVM.swift */; };
+		34226BE52539495900183D9B /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BE32539495800183D9B /* ScrollOffsetPreferenceKey.swift */; };
+		34226BE62539495900183D9B /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BE42539495900183D9B /* TrackableScrollView.swift */; };
 		3424E4FF2533FF7D00DE0CFD /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E4FE2533FF7D00DE0CFD /* Trailer.swift */; };
 		3424E5022533FFFD00DE0CFD /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */; };
 		3424E506253401E600DE0CFD /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E505253401E600DE0CFD /* VideoPreviewImage.swift */; };
@@ -50,6 +53,9 @@
 		34226BCD2539396D00183D9B /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
 		34226BD225393A0E00183D9B /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
 		34226BD625393D9500183D9B /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		34226BD92539434600183D9B /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
+		34226BE32539495800183D9B /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
+		34226BE42539495900183D9B /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		3424E4FE2533FF7D00DE0CFD /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		3424E505253401E600DE0CFD /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -98,9 +104,12 @@
 		34226BD0253939FF00183D9B /* ComingSoon */ = {
 			isa = PBXGroup;
 			children = (
+				34226BE32539495800183D9B /* ScrollOffsetPreferenceKey.swift */,
+				34226BE42539495900183D9B /* TrackableScrollView.swift */,
 				34226BCD2539396D00183D9B /* ComingSoon.swift */,
 				34226BD225393A0E00183D9B /* NotificationBar.swift */,
 				34226BD625393D9500183D9B /* ComingSoonRow.swift */,
+				34226BD92539434600183D9B /* ComingSoonVM.swift */,
 			);
 			path = ComingSoon;
 			sourceTree = "<group>";
@@ -312,6 +321,7 @@
 				345F6B8625381C4C00D46061 /* SearchView.swift in Sources */,
 				34226BCB2539301500183D9B /* SearchResultsGrid.swift in Sources */,
 				34B1BA49253158610032815B /* Episode.swift in Sources */,
+				34226BDA2539434600183D9B /* ComingSoonVM.swift in Sources */,
 				343AE8F1252BF08600E47D82 /* HomeView.swift in Sources */,
 				34DAEC4C252FF9400056A33E /* HomeVM.swift in Sources */,
 				3424E506253401E600DE0CFD /* VideoPreviewImage.swift in Sources */,
@@ -320,7 +330,9 @@
 				34DAEC51253009DC0056A33E /* TopMoviePreview.swift in Sources */,
 				34DAEC41252FF6950056A33E /* Movie.swift in Sources */,
 				345F6B83253814D700D46061 /* ActivityIndicator.swift in Sources */,
+				34226BE62539495900183D9B /* TrackableScrollView.swift in Sources */,
 				343AE8E1252BEFB200E47D82 /* BuildNetflixApp.swift in Sources */,
+				34226BE52539495900183D9B /* ScrollOffsetPreferenceKey.swift in Sources */,
 				345233E02533E9DA00DE1CEE /* MoreLikeThis.swift in Sources */,
 				34A6AC8025358265005144A7 /* HomeStack.swift in Sources */,
 				345F6B7C2537F43500D46061 /* SearchBar.swift in Sources */,
