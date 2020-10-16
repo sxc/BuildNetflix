@@ -47,9 +47,12 @@ struct SearchView: View {
                                 Text("Movies & TV")
                                     .bold()
                                     .font(.title3)
-                                    .padding(.leading, 22)
+                                    .padding(.leading, 12)
+                                    .foregroundColor(.white)
                                 Spacer()
                             }
+                            
+                            SearchResultsGrid(movies: vm.searchResults, movieDetailToShow: $movieDetailToShow)
                             
                             if movieDetailToShow != nil {
                                 MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)

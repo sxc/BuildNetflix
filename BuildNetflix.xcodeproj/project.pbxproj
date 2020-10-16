@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3404728E2538924100E874BB /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404728D2538924100E874BB /* PopularMovieView.swift */; };
+		34226BCB2539301500183D9B /* SearchResultsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226BCA2539301500183D9B /* SearchResultsGrid.swift */; };
 		3424E4FF2533FF7D00DE0CFD /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E4FE2533FF7D00DE0CFD /* Trailer.swift */; };
 		3424E5022533FFFD00DE0CFD /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */; };
 		3424E506253401E600DE0CFD /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E505253401E600DE0CFD /* VideoPreviewImage.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		3404728D2538924100E874BB /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		34226BCA2539301500183D9B /* SearchResultsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsGrid.swift; sourceTree = "<group>"; };
 		3424E4FE2533FF7D00DE0CFD /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		3424E5012533FFFD00DE0CFD /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		3424E505253401E600DE0CFD /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				345F6B8525381C4C00D46061 /* SearchView.swift */,
 				345F6B8825381CD700D46061 /* SearchVM.swift */,
 				3404728D2538924100E874BB /* PopularMovieView.swift */,
+				34226BCA2539301500183D9B /* SearchResultsGrid.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				34DAEC48252FF72E0056A33E /* GlobalHelpers.swift in Sources */,
 				3424E4FF2533FF7D00DE0CFD /* Trailer.swift in Sources */,
 				345F6B8625381C4C00D46061 /* SearchView.swift in Sources */,
+				34226BCB2539301500183D9B /* SearchResultsGrid.swift in Sources */,
 				34B1BA49253158610032815B /* Episode.swift in Sources */,
 				343AE8F1252BF08600E47D82 /* HomeView.swift in Sources */,
 				34DAEC4C252FF9400056A33E /* HomeVM.swift in Sources */,

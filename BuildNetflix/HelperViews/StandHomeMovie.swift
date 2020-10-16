@@ -15,7 +15,7 @@ struct StandHomeMovie: View {
         KFImage(movie.thumbnailURL)
             .resizable()
             .scaledToFill()
-//            .frame(width: 200, height: 300)
+            .frame(width: 200, height: 300)
     }
 }
 
