@@ -47,7 +47,7 @@ struct ContentView: View {
             Text("More")
                 .tabItem {
                     Image(systemName: "equal")
-                    Text("4")
+                    Text("More")
                 }.tag(4)
             
             
